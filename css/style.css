@@ -1,3 +1,9 @@
+:root {
+    --sidebar-width: 250px;
+    --menu-top-size: 55px
+  }
+  
+
 body{
     margin: 0;
     background: #F9F9F9;
@@ -33,6 +39,33 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #b9b5b5; 
   }
+
+  .vi-container{
+      margin-left: calc(var(--sidebar-width));
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 15px;
+      padding-top: calc(var(--menu-top-size) + 20px);
+  }
+
+  @media screen and (max-width: 992px) {
+    .vi-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .vi-container{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ @media screen and (max-width: 540px) {
+    .vi-container{
+        grid-template-columns: 1fr;
+    }
+ }
 /*common CSS*/
 
 /*navbar css start*/
@@ -41,6 +74,9 @@ body{
     border-bottom: solid 1px #ccc;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .bui-navbar-search{
@@ -74,11 +110,13 @@ body{
 /*sidebar css start*/
 .sidebar{
     background: white;
-    width: 250px;
+    width: var(--sidebar-width);
     position: fixed;
     height: 100%;
     overflow: hidden;
     transition: all 0.5s ease;
+    padding-top: var(--menu-top-size);
+    
 }
 
 .sidebar ul{
@@ -120,8 +158,49 @@ body{
 }
 
 @media screen and (max-width: 992px) {
+    .vi-container{
+        margin-left: inherit;
+    }
+
     .sidebar{
         display: none;
     }
 }
 /*sidebar css end*/
+
+
+/*youtuble list card start*/
+.vi-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.vi-card .vi-card-body{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.vi-channel-icon{
+    width: 48px;
+    border-radius: 50%;
+    display: block;
+}
+
+.vi-video-title{
+    font-size: 14px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.vi-channel-title, .vi-channel-views{
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    line-height: 18px;
+}
+/*youtube list card end*/
