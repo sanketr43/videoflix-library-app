@@ -102,6 +102,7 @@ body{
     width: 230px;
     background: white;
     display: none;
+    right: 0;
 }
 
 .vi-card-dropdown.vi-card-dropdown-active{
