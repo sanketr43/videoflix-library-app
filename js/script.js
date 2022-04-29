@@ -7,3 +7,9 @@ sidebarBtn.addEventListener("click", function() {
         sidebar.style.display = "none";
     }
 });
+
+
+function showDropdownMenu(ele){
+    let element = document.getElementById(ele);
+    element.classList.toggle("vi-card-dropdown-active");
+}
