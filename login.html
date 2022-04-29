@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/boiler-ui.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Videoflix</title>
+</head>
+<body>
+    <nav class="bui-navbar">
+        <div class="bui-navbar-container">
+            <div class="bui-navbar-logo">
+                <span class="btn-sidebar"  id="sidebarBtn"><i class="bi bi-list"></i></span>
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="bui-navbar-menu bui-navbar-search">
+                <i class="bi bi-search"></i>
+                <input type="text" class="bui-form-control" placeholder="Search">
+            </div>
+            <div class="bui-navbar-menu">
+                <a href="login.html">
+                    <button class="bui-btn bui-btn-danger">Login</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <a href="index.html"><li><i class="bi bi-house-fill"></i> Home</li></a>
+            <a href="explore.html"><li><i class="bi bi-speedometer2"></i> Explore</li></a>
+            <a href="playlist.html"><li><i class="bi bi-collection-play"></i> Playlist</li></a>
+            <a href="history.html"><li class="sidebar-menu-active"><i class="bi bi-clock-history"></i> History</li></a>
+            <a href="#"><li><i class="bi bi-play-btn"></i> Watch Later</li></a>
+            <a href="#"><li><i class="bi bi-hand-thumbs-up"></i> Liked Videos</li></a>
+            <div class="sidebar-hr"></div>
+            <a href="#"><li><i class="bi bi-music-note-list"></i> Music</li></a>
+            <a href="#"><li><i class="bi bi-trophy"></i> Sport</li></a>
+            <a href="#"><li><i class="bi bi-controller"></i> Gaming</li></a>
+            <a href="#"><li><i class="bi bi-film"></i> Flims</li></a>
+            <a href="#"><li><i class="bi bi-newspaper"></i> News</li></a>
+            <a href="#"><li><i class="bi bi-music-note-list"></i> Fashion & Beauty</li></a>
+            <a href="#"><li><i class="bi bi-book"></i> Learning</li></a>
+        </ul>
+    </div>
+
+
+    <div class="bui-container">
+        <div class="bui-auth">
+            <div class="bui-card">
+                <div class="bui-card-body">
+                    <h5 class="bui-card-title bui-text-center bui-mb-3 bui-mt-3">Login</h5>
+                    <div class="bui-auth-form">
+                        <form action="">
+                            <div class="bui-mb-3">
+                                <label for="email" class="bui-form-label">Email</label>
+                                <input type="text" class="bui-form-control" name="email">
+                            </div>
+                            <div class="bui-mb-3">
+                                <label for="password" class="bui-form-label">Password</label>
+                                <input type="password" class="bui-form-control" name="password">
+                            </div>
+                            <div class="bui-mb-3 bui-remember">
+                                <span><input type="checkbox"> Remember Me</span>
+                                <span><a href="#">Forget your password?</a></span>
+                            </div>
+                            <div class="bui-mb-4">
+                                <button class="bui-btn bui-btn-danger bui-btn-block">Login</button>
+                            </div>
+                            <div class="bui-mb-3 bui-text-center">
+                                <a href="register.html">Create new account <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
