@@ -1,0 +1,54 @@
+/*video vertical card start*/
+.vi-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    cursor: pointer;
+    position: relative;
+}
+
+.vi-card-img{
+    position: relative;
+}
+
+.vi-card .vi-card-body{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.vi-channel-icon{
+    width: 48px;
+    border-radius: 50%;
+    display: block;
+}
+
+.vi-video-title{
+    font-size: 14px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.vi-channel-title, .vi-channel-views{
+    font-size: 12px;
+    color: rgb(80, 80, 80);
+    line-height: 18px;
+}
+
+.vi-channel-views{
+    display: flex;
+}
+
+.vi-channel-views .vi-card-likes{
+    margin-left: 10px;
+    color: red;
+    font-size: 16px;
+}
+
+.vi-channel-views .vi-card-likes i{
+    padding-left: 5px;
+}
+/*video vertical card end*/

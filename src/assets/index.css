@@ -1,0 +1,170 @@
+:root {
+  --sidebar-width: 250px;
+  --menu-top-size: 55px
+}
+
+
+body{
+  margin: 0;
+  background: #F9F9F9;
+}
+
+/*common CSS*/
+.bui-btn{
+  padding: 0.5rem 1.25rem;
+}
+
+.bui-auth {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.bui-auth .bui-card{
+  margin: 5px 10px;
+}
+
+.bui-auth-form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bui-btn-block {
+  width: 100%;
+}
+
+.bui-auth-form .bui-remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bui-form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: rgba(220, 38, 38, 0.379);
+  outline: 0;
+  box-shadow: 0 0 0 0.156rem rgba(220, 38, 38, 0.05);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #909090; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b5b5; 
+}
+
+.vi-container{
+    margin-left: calc(var(--sidebar-width));
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding-top: calc(var(--menu-top-size) + 20px);
+}
+
+@media screen and (max-width: 992px) {
+  .vi-container{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vi-container{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .vi-container{
+      grid-template-columns: 1fr;
+  }
+}
+
+.vi-container-vertical{
+  margin-left: calc(var(--sidebar-width));
+  padding: 20px;
+  padding-top: calc(var(--menu-top-size) + 20px);
+  display: grid;
+  gap: 20px;
+}
+
+.vi-container-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.vi-container-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vi-container-title h5{
+  margin: 0;
+  font-weight: bold;
+}
+
+.vi-card-menu{
+  position: relative;
+}
+
+.vi-card-dropdown{
+  position: absolute;
+  z-index: 5;
+  border: solid 1px #ccc;
+  width: 230px;
+  background: white;
+  display: none;
+  right: 0;
+}
+
+.vi-card-dropdown.vi-card-dropdown-active{
+  display: block;
+}
+
+.vi-card-dropdown ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.vi-card-dropdown ul li{
+  list-style-type: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.vi-card-dropdown ul li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.vi-card-dropdown ul li:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+@media screen and (max-width: 992px) {
+  .vi-container, .vi-container-vertical{
+      margin-left: inherit;
+  }
+
+  .sidebar{
+      display: none;
+  }
+}
+/*common CSS*/
