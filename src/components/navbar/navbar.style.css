@@ -1,0 +1,38 @@
+/*navbar css start*/
+.bui-navbar{
+    background: white;
+    border-bottom: solid 1px #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.bui-navbar-search{
+    position: relative;
+    flex-grow: 0.2;
+}
+
+.bui-navbar-search i{
+    position: absolute;
+    left: 10px;
+}
+
+.bui-navbar-search input{
+    padding-left: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .bui-navbar-search{
+        display: none;
+    }
+}
+
+.btn-sidebar{
+    display: block;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+/*navbar css end*/
