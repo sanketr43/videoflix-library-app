@@ -1,4 +1,5 @@
 import './register.style.css';
+import { NavLink } from 'react-router-dom';
 
 function Register() {
     return ( 
@@ -29,7 +30,7 @@ function Register() {
                                     <button className="bui-btn bui-btn-danger bui-btn-block">Register</button>
                                 </div>
                                 <div className="bui-mb-3 bui-text-center">
-                                    Already have account? <a href="/login">Login Now <i className="bi bi-chevron-right"></i></a>
+                                    Already have account? <NavLink to={'/login'}>Login Now <i className="bi bi-chevron-right"></i></NavLink>
                                 </div>
                             </form>
                         </div>
