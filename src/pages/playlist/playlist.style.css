@@ -1,0 +1,29 @@
+.vi-playlist-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .vi-playlist-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .vi-playlist-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+ }
+
+ @media screen and (max-width: 540px) {
+    .vi-playlist-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+ }

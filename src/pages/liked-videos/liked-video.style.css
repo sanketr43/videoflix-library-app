@@ -1,0 +1,5 @@
+.vi-watchlater-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}

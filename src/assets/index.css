@@ -156,4 +156,15 @@ body{
 .vi-card-dropdown ul li:hover{
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+
+@media screen and (max-width: 992px) {
+  .vi-container, .vi-container-vertical{
+      margin-left: inherit;
+  }
+
+  .sidebar{
+      display: none;
+  }
+}
 /*common CSS*/

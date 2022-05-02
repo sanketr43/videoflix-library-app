@@ -53,14 +53,4 @@
 .sidebar:hover{
     overflow: auto;
 }
-
-@media screen and (max-width: 992px) {
-    .vi-container, .vi-container-vertical{
-        margin-left: inherit;
-    }
-
-    .sidebar{
-        display: none;
-    }
-}
 /*sidebar css end*/

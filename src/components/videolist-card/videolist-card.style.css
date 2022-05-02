@@ -1,0 +1,46 @@
+
+/*video watch later start*/
+
+.vi-watchlater-card{
+    background: white;
+    border: solid 1px #e9e9e9;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+    min-width: 250px;
+    gap: 15px;
+}
+
+.vi-watchlater-video{
+    width: 150px;
+    height: 80px;
+}
+
+.vi-watchlater-video img{
+     height: 100%;
+     width: 100%;  
+     object-fit: contain;
+}
+
+.vi-watchlater-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.vi-watchlater-body h5{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.vi-watchlater-body p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.vi-watchlater-icon{
+    margin-left: auto;
+}
+/*video watch later end*/
