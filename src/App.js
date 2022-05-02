@@ -6,6 +6,8 @@ import Playlist from './pages/playlist/playlist';
 import History from './pages/history/history';
 import WatchLater from './pages/watch-later/watch-later';
 import LikedVideo from './pages/liked-videos/liked-video';
+import Login from './pages/login/login';
+import Register from './pages/register/register';
 
 import Navbar from './components/navbar/navabar.component';
 import Sidebar from './components/sidebar/sidebar.component';
@@ -24,6 +26,8 @@ function App() {
         <Route path='/history' element={<History />} />
         <Route path='/watch-later' element={<WatchLater />} />
         <Route path='/liked' element={<LikedVideo />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </>
   );

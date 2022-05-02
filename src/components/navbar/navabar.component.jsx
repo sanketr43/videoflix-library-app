@@ -14,7 +14,7 @@ function Navbar() {
                     <input type="text" className="bui-form-control" placeholder="Search" />
                 </div>
                 <div className="bui-navbar-menu">
-                    <a href="#">
+                    <a href="/login">
                         <button className="bui-btn bui-btn-danger">Login</button>
                     </a>
                 </div>
