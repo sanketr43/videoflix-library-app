@@ -1,4 +1,5 @@
 import './login.style.css';
+import { NavLink } from 'react-router-dom';
 
 function Login() {
     return ( 
@@ -25,7 +26,7 @@ function Login() {
                                     <button className="bui-btn bui-btn-danger bui-btn-block">Login</button>
                                 </div>
                                 <div className="bui-mb-3 bui-text-center">
-                                    <a href="/register">Create new account <i className="bi bi-chevron-right"></i></a>
+                                    <NavLink to={'/register'}>Create new account <i className="bi bi-chevron-right"></i></NavLink>
                                 </div>
                             </form>
                         </div>

@@ -1,5 +1,6 @@
 import './navbar.style.css';
 import logo from '../../assets/logo.png';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
     return ( 
@@ -14,9 +15,9 @@ function Navbar() {
                     <input type="text" className="bui-form-control" placeholder="Search" />
                 </div>
                 <div className="bui-navbar-menu">
-                    <a href="/login">
+                    <NavLink to={'/login'}>
                         <button className="bui-btn bui-btn-danger">Login</button>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </nav>
