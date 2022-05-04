@@ -1,20 +1,23 @@
 import "./VerticalVideoCard.style.css";
 
-function VerticalVideoCard() {
+function truncate(str, n){
+    return (str.length > n) ? str.substr(0, n-1) + '...' : str;
+};
+
+function VerticalVideoCard({ videoId, title, description, videoThumbnail, channelTitle, channelLogo, category }) {
+    
     return ( 
         <div className="vi-card">
             <div className="vi-card-img">
-                <img className="bui-img-fluid" src="https://i.ytimg.com/vi/a5s84piQdJI/hqdefault.jpg" />
+                <img className="bui-img-fluid" src={videoThumbnail} />
             </div>
             <div className="vi-card-body">
                 <div>
-                    <img className="vi-channel-icon bui-img-fluid" src="https://docs.snap.com/assets/images/creating-an-icon_creating_an_icon_world_example-a831f0c2b967e422d37120d99c9959e0.png" />
+                    <img className="vi-channel-icon bui-img-fluid" src={`https://ui-avatars.com/api/?name=${channelLogo}&background=random`} />
                 </div>
                 <div>
-                    <div className="vi-video-title">
-                        Manchester United v. Norwich City | PREMIER LEAGUE HIGHLIGHTS...
-                    </div>
-                    <div className="vi-channel-title">NBC Sports</div>
+                    <div className="vi-video-title">{truncate(title,50)}</div>
+                    <div className="vi-channel-title">{channelTitle}</div>
                     <div className="vi-channel-views">
                         <span>23M views</span>
                         <span>1 year ago</span>
