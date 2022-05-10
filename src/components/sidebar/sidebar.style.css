@@ -35,7 +35,7 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.sidebar ul li.sidebar-menu-active{
+.sidebar ul a.sidebar-menu-active li{
     background-color: #E5E5E5;
 }
 
